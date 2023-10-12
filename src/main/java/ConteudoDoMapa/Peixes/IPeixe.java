@@ -1,14 +1,14 @@
-package Peixes;
+package ConteudoDoMapa.Peixes;
 
-import Alimentos.IAlimento;
+import ConteudoDoMapa.Alimentos.IAlimento;
 
 public interface IPeixe {
     public void moverCima();
     public void moverBaixo();
     public void moverEsquerda();
     public void moverDireita();
-    public Integer getLinha();
-    public Integer getColuna();
+    public Integer getLinhaAtual();
+    public Integer getColunaAtual();
     public IPeixe reproduzir();
     public void Come(IAlimento alimento);
 }

@@ -1,11 +1,12 @@
-package Peixes;
+package ConteudoDoMapa.Peixes;
 
-import Alimentos.IAlimento;
+import ConteudoDoMapa.Alimentos.IAlimento;
+import Mapa.IElementosDoMapa;
 
-public abstract class Peixe implements IPeixe{
+public abstract class Peixe implements IPeixe, IElementosDoMapa {
 
-    private Integer linha;
-    private Integer coluna;
+    private Integer linhaAtual;
+    private Integer colunaAtual;
 
     @Override
     public void moverCima() {
@@ -28,13 +29,13 @@ public abstract class Peixe implements IPeixe{
     }
 
     @Override
-    public Integer getLinha() {
-        return linha;
+    public Integer getLinhaAtual() {
+        return this.linhaAtual;
     }
 
     @Override
-    public Integer getColuna() {
-        return coluna;
+    public Integer getColunaAtual() {
+        return this.colunaAtual;
     }
 
     @Override

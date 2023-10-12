@@ -1,13 +1,12 @@
 package Mapa;
 
-import Peixes.IPeixe;
-import Peixes.Peixe;
+import ConteudoDoMapa.CelulaVazia;
+import ConteudoDoMapa.Peixes.IPeixe;
 
 public class Mapa {
     private static Mapa mapa = null;
-    private int[][] matriz_mapa;
+    private IElementosDoMapa[][] matriz_mapa;
 
-    private final int CELULA_LIVRE = 0;
 
     private Mapa() {}
 
@@ -20,26 +19,29 @@ public class Mapa {
     }
 
     public Mapa setTamanhoMapa(int linhas, int colunas) {
-        this.matriz_mapa = new int[linhas][colunas];
+        this.matriz_mapa = new IElementosDoMapa[linhas][colunas];
         for (int i = 0; i < linhas; i++) {
             for (int j = 0; j < colunas; j++) {
-                this.matriz_mapa[i][j] = CELULA_LIVRE;
+                this.matriz_mapa[i][j] = new CelulaVazia();
             }
         }
         return this;
     }
 
-    public int[][] getMapa() {
+    public IElementosDoMapa[][] getMapa() {
         return this.matriz_mapa;
     }
 
-    public int getPosicaoDoMapa(int linha, int coluna) {
+    public IElementosDoMapa getPosicaoDoMapa(int linha, int coluna) {
         return this.matriz_mapa[linha][coluna];
     }
 
-    public boolean verificaProximidades(int linha, int coluna)
+    public boolean verificaProximidades(int linha, int coluna) {
+        return true;
+    }
 
-    public Mapa insereNovoPeixe(IPeixe peixe) {
-
+    public Mapa insereNovoElemento(int linha, int coluna, IElementosDoMapa elemento) {
+        this.matriz_mapa[linha][coluna] = elemento;
+        return this;
     }
 }

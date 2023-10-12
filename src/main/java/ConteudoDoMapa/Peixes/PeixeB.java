@@ -1,6 +1,6 @@
-package Peixes;
+package ConteudoDoMapa.Peixes;
 
-import Alimentos.IAlimento;
+import ConteudoDoMapa.Alimentos.IAlimento;
 
 public class PeixeB extends Peixe {
     @Override
