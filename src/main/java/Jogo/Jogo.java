@@ -14,6 +14,7 @@ public class Jogo {
     private int movimentacaoMortePeixeA;
     private int movimentacaoMortePeixeB;
 
+    private Scanner scanner = new Scanner(System.in);
     private static Jogo jogo = null;
     private Jogo() {};
 
@@ -24,70 +25,111 @@ public class Jogo {
         return jogo;
     }
 
-    public void defineParametros() {
-        Scanner scanner = new Scanner(System.in);
-        this.defineTamanhoMapa(scanner);
-        scanner.close();
+    public Jogo defineParametros() {
+        this.defineTamanhoMapa();
+        return this;
     }
 
-    private void defineTamanhoMapa(Scanner scanner) {
+    private void defineTamanhoMapa() {
         System.out.print("Digite a quantidade de linhas da matriz: ");
-        this.numeroLinhasMapa = scanner.nextInt();
+        this.numeroLinhasMapa = this.scanner.nextInt();
 
         System.out.print("Digite a quantidade de colunas da matriz: ");
-        this.numeroColunasMapa = scanner.nextInt();
+        this.numeroColunasMapa = this.scanner.nextInt();
 
         Mapa.getInstance().setTamanhoMapa(this.numeroLinhasMapa, this.numeroColunasMapa);
-        this.defineNumeroPeixes(scanner);
+        this.defineNumeroPeixes();
     }
 
-    private void defineNumeroPeixes(Scanner scanner) {
+    private void defineNumeroPeixes() {
         System.out.print("Digite a quantidade de peixes do tipo A(É possível inserir de 0 até " + this.numeroLinhasMapa * this.numeroColunasMapa + " peixes): ");
-        this.numeroPeixesA = scanner.nextInt();
+        this.numeroPeixesA = this.scanner.nextInt();
         while(this.numeroPeixesA < 0 || this.numeroPeixesA > (this.numeroLinhasMapa * this.numeroColunasMapa)) {
             System.out.print("Digite a quantidade de peixes do tipo A(É possível inserir de 0 até " + this.numeroLinhasMapa * this.numeroColunasMapa + "peixes): ");
-            this.numeroPeixesA = scanner.nextInt();
+            this.numeroPeixesA = this.scanner.nextInt();
         }
 
         System.out.print("Digite a quantidade de peixes do tipo B(É possível inserir de 0 até " + ((this.numeroLinhasMapa * this.numeroColunasMapa) - this.numeroPeixesA) + " peixes): ");
-        this.numeroPeixesB = scanner.nextInt();
+        this.numeroPeixesB = this.scanner.nextInt();
         while(this.numeroPeixesB < 0 || this.numeroPeixesB > (this.numeroLinhasMapa * this.numeroColunasMapa - this.numeroPeixesA)) {
             System.out.print("Digite a quantidade de peixes do tipo B(É possível inserir de 0 até " + ((this.numeroLinhasMapa * this.numeroColunasMapa) - this.numeroPeixesB) + " peixes): ");
-            this.numeroPeixesB = scanner.nextInt();
+            this.numeroPeixesB = this.scanner.nextInt();
         }
-        this.defineMovimentacaoReproducao(scanner);
+        this.defineMovimentacaoReproducao();
     }
 
-    private void defineMovimentacaoReproducao(Scanner scanner) {
+    private void defineMovimentacaoReproducao() {
         System.out.print("Digite a quantidade de movimentações para reprodução do peixe A: ");
-        this.movimentacaoReproducaoPeixeA = scanner.nextInt();
+        this.movimentacaoReproducaoPeixeA = this.scanner.nextInt();
         while(this.movimentacaoReproducaoPeixeA < 1) {
             System.out.print("Digite a quantidade de movimentações para reprodução do peixe A: ");
-            this.movimentacaoReproducaoPeixeA = scanner.nextInt();
+            this.movimentacaoReproducaoPeixeA = this.scanner.nextInt();
         }
 
         System.out.print("Digite a quantidade de movimentações para reprodução do peixe B: ");
-        this.movimentacaoReproducaoPeixeB = scanner.nextInt();
+        this.movimentacaoReproducaoPeixeB = this.scanner.nextInt();
         while(this.movimentacaoReproducaoPeixeB < 1) {
             System.out.print("Digite a quantidade de movimentações para reprodução do peixe B: ");
-            this.movimentacaoReproducaoPeixeB = scanner.nextInt();
+            this.movimentacaoReproducaoPeixeB = this.scanner.nextInt();
         }
-        this.defineMovimentacaoMorte(scanner);
+        this.defineMovimentacaoMorte();
     }
 
-    private void defineMovimentacaoMorte(Scanner scanner) {
+    private void defineMovimentacaoMorte() {
         System.out.print("Digite a quantidade de movimentações para morte do peixe A: ");
-        this.movimentacaoMortePeixeA = scanner.nextInt();
+        this.movimentacaoMortePeixeA = this.scanner.nextInt();
         while(this.movimentacaoMortePeixeA < 1) {
             System.out.print("Digite a quantidade de movimentações para morte do peixe A: ");
-            this.movimentacaoMortePeixeA = scanner.nextInt();
+            this.movimentacaoMortePeixeA = this.scanner.nextInt();
         }
 
         System.out.print("Digite a quantidade de movimentações para morte do peixe B: ");
-        this.movimentacaoMortePeixeB = scanner.nextInt();
+        this.movimentacaoMortePeixeB = this.scanner.nextInt();
         while(this.movimentacaoMortePeixeB < 1) {
             System.out.print("Digite a quantidade de movimentações para morte do peixe B: ");
-            this.movimentacaoMortePeixeB = scanner.nextInt();
+            this.movimentacaoMortePeixeB = this.scanner.nextInt();
         }
+    }
+
+    public int getNumeroLinhasMapa() {
+        return numeroLinhasMapa;
+    }
+
+    public int getNumeroColunasMapa() {
+        return numeroColunasMapa;
+    }
+
+    public int getNumeroPeixesA() {
+        return numeroPeixesA;
+    }
+
+    public int getNumeroPeixesB() {
+        return numeroPeixesB;
+    }
+
+    public int getMovimentacaoReproducaoPeixeA() {
+        return movimentacaoReproducaoPeixeA;
+    }
+
+    public int getMovimentacaoReproducaoPeixeB() {
+        return movimentacaoReproducaoPeixeB;
+    }
+
+    public int getMovimentacaoMortePeixeA() {
+        return movimentacaoMortePeixeA;
+    }
+
+    public int getMovimentacaoMortePeixeB() {
+        return movimentacaoMortePeixeB;
+    }
+
+    public void iniciaJogo() {
+        int finalizarJogo;
+        do {
+
+            System.out.print("Digite 1 para ver a proximo interação e 0 para sair: ");
+            finalizarJogo = this.scanner.nextInt();
+        } while (finalizarJogo != 0);
+        this.scanner.close();
     }
 }

@@ -2,13 +2,16 @@ package ConteudoDoMapa.Peixes;
 
 import ConteudoDoMapa.Alimentos.IAlimento;
 
+import javax.management.InvalidAttributeValueException;
+import java.util.List;
+
 public interface IPeixe {
-    public void moverCima();
-    public void moverBaixo();
-    public void moverEsquerda();
-    public void moverDireita();
+    public IPeixe setLinhaAtual(int linhaAtual);
+    public IPeixe setColunaAtual(int colunaAtual);
     public Integer getLinhaAtual();
     public Integer getColunaAtual();
-    public IPeixe reproduzir();
-    public void Come(IAlimento alimento);
+    public List<String> verificaProximidades() throws InvalidAttributeValueException;
+    public void reproduzir() throws InvalidAttributeValueException;
+    public IPeixe come(IAlimento alimento);
+    public void morre();
 }

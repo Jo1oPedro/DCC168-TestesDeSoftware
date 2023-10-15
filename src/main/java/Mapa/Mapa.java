@@ -1,12 +1,14 @@
 package Mapa;
 
-import ConteudoDoMapa.CelulaVazia;
+import ConteudoDoMapa.Alimentos.IAlimento;
 import ConteudoDoMapa.Peixes.IPeixe;
+import ConteudoDoMapa.Peixes.Peixe;
+import ConteudoDoMapa.Peixes.PeixeA;
+import ConteudoDoMapa.Peixes.PeixeB;
 
 public class Mapa {
     private static Mapa mapa = null;
-    private IElementosDoMapa[][] matriz_mapa;
-
+    private IPeixe[][] matriz_mapa;
 
     private Mapa() {}
 
@@ -19,29 +21,33 @@ public class Mapa {
     }
 
     public Mapa setTamanhoMapa(int linhas, int colunas) {
-        this.matriz_mapa = new IElementosDoMapa[linhas][colunas];
+        this.matriz_mapa = new IPeixe[linhas][colunas];
         for (int i = 0; i < linhas; i++) {
             for (int j = 0; j < colunas; j++) {
-                this.matriz_mapa[i][j] = new CelulaVazia();
+                this.matriz_mapa[i][j] = null;
             }
         }
         return this;
     }
 
-    public IElementosDoMapa[][] getMapa() {
+    public IPeixe[][] getMapa() {
         return this.matriz_mapa;
     }
 
-    public IElementosDoMapa getPosicaoDoMapa(int linha, int coluna) {
+    public IPeixe getPosicaoDoMapa(int linha, int coluna) {
         return this.matriz_mapa[linha][coluna];
     }
 
-    public boolean verificaProximidades(int linha, int coluna) {
-        return true;
+    public Mapa insereNovoPeixe(IPeixe peixe) {
+        this.matriz_mapa[peixe.getLinhaAtual()][peixe.getColunaAtual()] = peixe;
+        return this;
     }
 
-    public Mapa insereNovoElemento(int linha, int coluna, IElementosDoMapa elemento) {
-        this.matriz_mapa[linha][coluna] = elemento;
+    public Mapa removePeixe(IPeixe peixe) {
+        if(this.matriz_mapa[peixe.getLinhaAtual()][peixe.getColunaAtual()] instanceof PeixeA && peixe instanceof PeixeB) {
+            peixe.come((IAlimento) this.matriz_mapa[peixe.getLinhaAtual()][peixe.getColunaAtual()]);
+        }
+        this.matriz_mapa[peixe.getLinhaAtual()][peixe.getColunaAtual()] = null;
         return this;
     }
 }
