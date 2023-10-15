@@ -6,6 +6,8 @@ import ConteudoDoMapa.Peixes.Peixe;
 import ConteudoDoMapa.Peixes.PeixeA;
 import ConteudoDoMapa.Peixes.PeixeB;
 
+import javax.management.InvalidAttributeValueException;
+
 public class Mapa {
     private static Mapa mapa = null;
     private IPeixe[][] matriz_mapa;
@@ -43,7 +45,7 @@ public class Mapa {
         return this;
     }
 
-    public Mapa removePeixe(IPeixe peixe) {
+    public Mapa removePeixe(IPeixe peixe) throws InvalidAttributeValueException {
         if(this.matriz_mapa[peixe.getLinhaAtual()][peixe.getColunaAtual()] instanceof PeixeA && peixe instanceof PeixeB) {
             peixe.come((IAlimento) this.matriz_mapa[peixe.getLinhaAtual()][peixe.getColunaAtual()]);
         }

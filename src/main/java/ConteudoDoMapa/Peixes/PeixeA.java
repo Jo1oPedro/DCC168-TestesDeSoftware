@@ -33,35 +33,56 @@ public class PeixeA extends Peixe implements IAlimento {
     }
 
     @Override
-    protected String sorteiaPosicaoParaMovimentar() {
-        Random random = new Random();
-        if(this.posicoesTentadas.size() - 1 > 0) {
-            int direcao_indice = random.nextInt(this.posicoesTentadas.size() - 1);
-            String direcao = this.posicoesTentadas.get(direcao_indice);
-            this.posicoesTentadas.remove(direcao_indice);
-            return direcao;
+    protected Peixe movimentoInvalido() throws PeixeMortoException, InvalidAttributeValueException {
+        if(this.recuperaNumeroMovimentosInvalidos() == Jogo.getInstance().getMovimentacaoMortePeixeA()) {
+            this.morre();
         }
-        return "";
+        return this;
+    }
+
+    @Override
+    protected String[] sorteiaPosicaoParaMovimentar() throws InvalidAttributeValueException {
+        Random random = new Random();
+        List<String> proximidades = this.verificaProximidades();
+        int direcao_indice;
+        if(proximidades.size() - 1 >= 0) {
+            if(proximidades.size() - 1 == 0) {
+                direcao_indice = 0;
+            } else {
+                direcao_indice = random.nextInt(proximidades.size() - 1);
+            }
+            String[] direcoes = proximidades.get(direcao_indice).split(",");
+            return direcoes;
+        }
+        return new String[]{"", ""};
     }
 
     @Override
     public void reproduzir() throws InvalidAttributeValueException {
+        this.resetaMovimentoInvalido();
         if(this.recuperaNumeroMovimentosValido() == Jogo.getInstance().getMovimentacaoReproducaoPeixeA()) {
+            this.resetaMovimentoValido().resetaMovimentoInvalido();
             Random random = new Random();
             PeixeA peixeA = new PeixeA();
             List<String> proximidades = this.verificaProximidades();
-            if(proximidades.size() - 1 > 0) {
-                int direcao_indice = random.nextInt(proximidades.size() - 1);
+            int direcao_indice;
+            if(proximidades.size() - 1 >= 0) {
+                if(proximidades.size() - 1 >= 0) {
+                    direcao_indice = 0;
+                } else {
+                    direcao_indice = random.nextInt(proximidades.size() - 1);
+                }
                 String[] valores = proximidades.get(direcao_indice).split(",");
                 peixeA.setLinhaAtual(Integer.parseInt(valores[0])).setColunaAtual(Integer.parseInt(valores[1]));
                 Mapa.getInstance().insereNovoPeixe(peixeA);
+                Jogo.getInstance().setPeixe(peixeA);
             }
         }
     }
 
     @Override
     public IPeixe come(IAlimento plancton) {
-        return null;
+        return this;
     }
 
 

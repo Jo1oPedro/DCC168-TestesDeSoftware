@@ -82,115 +82,28 @@ public abstract class Peixe implements IPeixe, IElementosDoMapa {
     }
 
     public IPeixe mover() throws InvalidAttributeValueException {
-        int linhaAtual = this.linhaAtual;
-        int colunaAtual = this.colunaAtual;
+        try {
+            String[] posicoes = this.sorteiaPosicaoParaMovimentar();
 
-        String direcao = this.sorteiaPosicaoParaMovimentar();
+            if(posicoes[0].isEmpty() && posicoes[1].isEmpty()) {
+                this.incrementaMovimentoInvalido();
+            } else {
+                this.linhaAtual = Integer.valueOf(posicoes[0]);
+                this.colunaAtual = Integer.valueOf(posicoes[1]);
 
-        switch (direcao) {
-            case "cima":
-                this.moverCima();
-                break;
-            case "baixo":
-                this.moverBaixo();
-                break;
-            case "esquerda":
-                this.moverEsquerda();
-                break;
-            case "direita":
-                this.moverDireita();
-                break;
+                Mapa.getInstance()
+                    .removePeixe(this)
+                    .insereNovoPeixe(this.incrementaMovimentoValido());
+                this.reproduzir();
+            }
+        } catch (PeixeMortoException exception) {
+            return this;
         }
-
-        if(this.linhaAtual == linhaAtual && this.colunaAtual == colunaAtual) {
-            this.numeroMovimentoInvalido();
-        } else {
-            this.reproduzir();
-        }
-
-        this.posicoesTentadas.clear();
-        this.posicoesTentadas = new ArrayList<>(Arrays.asList("cima", "baixo", "esquerda", "direita"));
 
         return this;
     }
 
-    protected IPeixe moverCima() {
-        if(this.podeMoverAcima()) {
-            this.linhaAtual++;
-            Mapa.getInstance()
-                .removePeixe(this)
-                .insereNovoPeixe(this.incrementaMovimentoValido());
-            return this;
-        }
-
-        String direcao = this.sorteiaPosicaoParaMovimentar();
-
-        return switch (direcao) {
-            case "baixo" -> this.moverBaixo();
-            case "esquerda" -> this.moverEsquerda();
-            case "direita" -> this.moverDireita();
-            default -> this;
-        };
-    }
-
-    protected IPeixe moverBaixo() {
-        if(this.podeMoverAbaixo()) {
-            this.linhaAtual--;
-            Mapa.getInstance()
-                .removePeixe(this)
-                .insereNovoPeixe(this.incrementaMovimentoValido());
-            return this;
-        }
-
-        String direcao = this.sorteiaPosicaoParaMovimentar();
-
-        return switch (direcao) {
-            case "cima" -> this.moverCima();
-            case "esquerda" -> this.moverEsquerda();
-            case "direita" -> this.moverDireita();
-            default -> this;
-        };
-    }
-
-    protected IPeixe moverEsquerda() {
-        if(this.podeMoverEsquerda()) {
-            this.colunaAtual--;
-            Mapa.getInstance()
-                .removePeixe(this)
-                .insereNovoPeixe(this.incrementaMovimentoValido());
-            return this;
-        }
-
-        String direcao = this.sorteiaPosicaoParaMovimentar();
-
-        return switch (direcao) {
-            case "cima" -> this.moverCima();
-            case "baixo" -> this.moverBaixo();
-            case "direita" -> this.moverDireita();
-            default -> this;
-        };
-    }
-
-    protected IPeixe moverDireita() {
-        if(this.podeMoverDireita()) {
-            this.colunaAtual++;
-            Mapa.getInstance()
-                .removePeixe(this)
-                .insereNovoPeixe(this.incrementaMovimentoValido());
-            return this;
-        }
-
-        String direcao = this.sorteiaPosicaoParaMovimentar();
-
-        return switch (direcao) {
-            case "cima" -> this.moverCima();
-            case "baixo" -> this.moverBaixo();
-            case "esquerda" -> this.moverEsquerda();
-            default -> this;
-        };
-    }
-
-    protected abstract String sorteiaPosicaoParaMovimentar();
+    protected abstract String[] sorteiaPosicaoParaMovimentar() throws InvalidAttributeValueException, PeixeMortoException;
 
     protected boolean podeMoverAcima() {
         if(this.linhaAtual + 1 < Mapa.getInstance().getMapa().length) {
@@ -225,15 +138,28 @@ public abstract class Peixe implements IPeixe, IElementosDoMapa {
     protected abstract boolean regraMoverEsquerda();
     protected abstract boolean regraMoverDireita();
 
-    protected IPeixe incrementaMovimentoValido() {
+    protected Peixe resetaMovimentoValido() {
+        this.numeroMovimentosValidos = 0;
+        return this;
+    }
+
+    protected Peixe resetaMovimentoInvalido() {
+        this.numeroMovimentosInvalidos = 0;
+        return this;
+    }
+
+    protected Peixe incrementaMovimentoValido() {
         this.numeroMovimentosValidos++;
         return this;
     }
 
-    protected IPeixe numeroMovimentoInvalido() {
+    protected Peixe incrementaMovimentoInvalido() throws PeixeMortoException, InvalidAttributeValueException {
         this.numeroMovimentosInvalidos++;
+        this.movimentoInvalido();
         return this;
     }
+
+    protected abstract Peixe movimentoInvalido() throws PeixeMortoException, InvalidAttributeValueException;
 
     public int recuperaNumeroMovimentosValido() {
         return this.numeroMovimentosValidos;
@@ -247,9 +173,11 @@ public abstract class Peixe implements IPeixe, IElementosDoMapa {
     public abstract void reproduzir() throws InvalidAttributeValueException;
 
     @Override
-    public abstract IPeixe come(IAlimento alimento);
+    public abstract IPeixe come(IAlimento alimento) throws InvalidAttributeValueException;
 
-    public void morre() {
+    public void morre() throws InvalidAttributeValueException, PeixeMortoException {
         Mapa.getInstance().removePeixe(this);
+        Jogo.getInstance().getPeixes().remove(this);
+        throw new PeixeMortoException();
     };
 }

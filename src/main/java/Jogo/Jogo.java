@@ -1,10 +1,20 @@
 package Jogo;
 
+import ConteudoDoMapa.Peixes.IPeixe;
+import ConteudoDoMapa.Peixes.PeixeA;
+import ConteudoDoMapa.Peixes.PeixeB;
 import Mapa.Mapa;
+import com.sun.security.jgss.GSSUtil;
 
+import javax.management.InvalidAttributeValueException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Jogo {
+
+    private List<IPeixe> peixes = new ArrayList<IPeixe>();
     private int numeroLinhasMapa;
     private int numeroColunasMapa;
     private int numeroPeixesA;
@@ -123,12 +133,57 @@ public class Jogo {
         return movimentacaoMortePeixeB;
     }
 
-    public void iniciaJogo() {
-        int finalizarJogo;
-        do {
+    public List<IPeixe> getPeixes() {
+        return peixes;
+    }
 
-            System.out.print("Digite 1 para ver a proximo interação e 0 para sair: ");
-            finalizarJogo = this.scanner.nextInt();
+    public Jogo setPeixe(IPeixe peixe) {
+        this.peixes.add(peixe);
+        return this;
+    }
+
+    public void iniciaJogo() throws InvalidAttributeValueException {
+        int finalizarJogo;
+        for (int i = 0; i < this.numeroPeixesA; i++) {
+            Random random = new Random();
+            int linha;
+            int coluna;
+            do {
+                linha = random.nextInt(this.numeroLinhasMapa - 1);
+                coluna = random.nextInt(this.numeroColunasMapa - 1);
+            } while (Mapa.getInstance().getPosicaoDoMapa(linha, coluna) != null);
+            IPeixe peixeA = new PeixeA().setLinhaAtual(linha).setColunaAtual(coluna);
+            Mapa.getInstance().insereNovoPeixe(peixeA);
+            this.setPeixe(peixeA);
+        }
+
+        for (int i = 0; i < this.numeroPeixesB; i++) {
+            Random random = new Random();
+            int linha;
+            int coluna;
+            do {
+                linha = random.nextInt(this.numeroLinhasMapa);
+                coluna = random.nextInt(this.numeroColunasMapa);
+                System.out.println("linha: " + linha  + " coluna: " + coluna);
+            } while (Mapa.getInstance().getPosicaoDoMapa(linha, coluna) != null);
+            IPeixe peixeB = new PeixeB().setLinhaAtual(linha).setColunaAtual(coluna);
+            Mapa.getInstance().insereNovoPeixe(peixeB);
+            this.setPeixe(peixeB);
+        }
+
+        int posicao = 0;
+        do {
+            this.getPeixes().get(posicao).mover();
+            posicao++;
+            if(posicao >= this.getPeixes().size()) {
+                posicao = 0;
+            }
+            if(this.getPeixes().isEmpty()) {
+                System.out.println("Todos os peixes morreram");
+                return;
+            }
+            //System.out.print("Digite 1 para ver a proxima interação e 0 para sair: ");
+            finalizarJogo = 1;//this.scanner.nextInt();
         } while (finalizarJogo != 0);
         this.scanner.close();
     }

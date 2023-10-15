@@ -4,6 +4,8 @@ import ConteudoDoMapa.Peixes.PeixeB;
 import Mapa.Mapa;
 import org.junit.Test;
 
+import javax.management.InvalidAttributeValueException;
+
 import static org.junit.Assert.*;
 
 public class MapaTest {
@@ -32,7 +34,7 @@ public class MapaTest {
     }
 
     @Test
-    public void deveRemoverUmElementoDoMapaComSucesso() {
+    public void deveRemoverUmElementoDoMapaComSucesso() throws InvalidAttributeValueException {
         Mapa mapa = Mapa.getInstance().setTamanhoMapa(3, 3);
         IPeixe peixeA = new PeixeA().setLinhaAtual(0).setColunaAtual(0);
         mapa.insereNovoPeixe(peixeA);
