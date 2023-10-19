@@ -2,7 +2,6 @@ package ConteudoDoMapa.Peixes;
 
 import ConteudoDoMapa.Alimentos.IAlimento;
 import Jogo.Jogo;
-import Mapa.IElementosDoMapa;
 import Mapa.Mapa;
 
 import javax.management.InvalidAttributeValueException;
@@ -11,7 +10,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-public abstract class Peixe implements IPeixe, IElementosDoMapa {
+public abstract class Peixe implements IPeixe {
 
     private Integer linhaAtual;
     private Integer colunaAtual;

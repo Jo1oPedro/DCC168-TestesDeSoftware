@@ -164,7 +164,6 @@ public class Jogo {
             do {
                 linha = random.nextInt(this.numeroLinhasMapa);
                 coluna = random.nextInt(this.numeroColunasMapa);
-                System.out.println("linha: " + linha  + " coluna: " + coluna);
             } while (Mapa.getInstance().getPosicaoDoMapa(linha, coluna) != null);
             IPeixe peixeB = new PeixeB().setLinhaAtual(linha).setColunaAtual(coluna);
             Mapa.getInstance().insereNovoPeixe(peixeB);
