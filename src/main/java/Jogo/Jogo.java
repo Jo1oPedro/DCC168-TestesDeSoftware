@@ -149,8 +149,8 @@ public class Jogo {
             int linha;
             int coluna;
             do {
-                linha = random.nextInt(this.numeroLinhasMapa - 1);
-                coluna = random.nextInt(this.numeroColunasMapa - 1);
+                linha = random.nextInt(this.numeroLinhasMapa);
+                coluna = random.nextInt(this.numeroColunasMapa);
             } while (Mapa.getInstance().getPosicaoDoMapa(linha, coluna) != null);
             IPeixe peixeA = new PeixeA().setLinhaAtual(linha).setColunaAtual(coluna);
             Mapa.getInstance().insereNovoPeixe(peixeA);
@@ -182,8 +182,8 @@ public class Jogo {
                 System.out.println("Todos os peixes morreram");
                 return;
             }
-            //System.out.print("Digite 1 para ver a proxima interação e 0 para sair: ");
-            finalizarJogo = 1;//this.scanner.nextInt();
+            System.out.print("Digite 1 para ver a proxima interação e 0 para sair: ");
+            finalizarJogo = this.scanner.nextInt();
         } while (finalizarJogo != 0);
         this.scanner.close();
     }
