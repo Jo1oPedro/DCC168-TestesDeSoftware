@@ -7,6 +7,7 @@ import ConteudoDoMapa.Peixes.PeixeA;
 import ConteudoDoMapa.Peixes.PeixeB;
 
 import javax.management.InvalidAttributeValueException;
+import javax.swing.*;
 
 public class Mapa {
     private static Mapa mapa = null;
@@ -51,5 +52,27 @@ public class Mapa {
         }
         this.matriz_mapa[peixe.getLinhaAtual()][peixe.getColunaAtual()] = null;
         return this;
+    }
+
+    public void imprimeMapa()
+    {
+        StringBuilder htmlBuilder = new StringBuilder();
+        htmlBuilder.append("<html><body><table border='1'>");
+
+        for (IPeixe[] iPeixes : matriz_mapa) {
+            htmlBuilder.append("<tr>");
+            for (IPeixe iPeixe : iPeixes) {
+                if(iPeixe != null)
+                    htmlBuilder.append("<td>").append(iPeixe.getClass().getSimpleName()).append("</td>");
+                else
+                    htmlBuilder.append("<td>").append(" ").append("</td>");
+            }
+            htmlBuilder.append("</tr>");
+        }
+
+        htmlBuilder.append("</table></body></html>");
+
+        // Exiba a matriz em um JOptionPane
+        JOptionPane.showMessageDialog(null, htmlBuilder.toString(), "Matriz", JOptionPane.INFORMATION_MESSAGE);
     }
 }

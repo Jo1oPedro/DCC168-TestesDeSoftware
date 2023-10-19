@@ -7,6 +7,7 @@ import Mapa.Mapa;
 import com.sun.security.jgss.GSSUtil;
 
 import javax.management.InvalidAttributeValueException;
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -43,9 +44,19 @@ public class Jogo {
     private void defineTamanhoMapa() {
         System.out.print("Digite a quantidade de linhas da matriz: ");
         this.numeroLinhasMapa = this.scanner.nextInt();
+        while (this.numeroLinhasMapa < 2 || this.numeroLinhasMapa > 30)
+        {
+            System.out.print("Digite a quantidade de linhas da matriz: ");
+            this.numeroLinhasMapa = this.scanner.nextInt();
+        }
 
         System.out.print("Digite a quantidade de colunas da matriz: ");
         this.numeroColunasMapa = this.scanner.nextInt();
+        while (this.numeroColunasMapa < 2 || this.numeroColunasMapa > 30)
+        {
+            System.out.print("Digite a quantidade de colunas da matriz: ");
+            this.numeroColunasMapa = this.scanner.nextInt();
+        }
 
         Mapa.getInstance().setTamanhoMapa(this.numeroLinhasMapa, this.numeroColunasMapa);
         this.defineNumeroPeixes();
@@ -144,6 +155,7 @@ public class Jogo {
 
     public void iniciaJogo() throws InvalidAttributeValueException {
         int finalizarJogo;
+        System.out.println("Aguarde! Será aberto uma janela gráfica!");
         for (int i = 0; i < this.numeroPeixesA; i++) {
             Random random = new Random();
             int linha;
@@ -174,16 +186,20 @@ public class Jogo {
         do {
             this.getPeixes().get(posicao).mover();
             posicao++;
+            Mapa.getInstance().imprimeMapa();
             if(posicao >= this.getPeixes().size()) {
                 posicao = 0;
             }
             if(this.getPeixes().isEmpty()) {
-                System.out.println("Todos os peixes morreram");
+                JOptionPane.showMessageDialog(null, "Todos os peixes morreram", "Informação", JOptionPane.INFORMATION_MESSAGE, null);
                 return;
             }
-            System.out.print("Digite 1 para ver a proxima interação e 0 para sair: ");
-            finalizarJogo = this.scanner.nextInt();
-        } while (finalizarJogo != 0);
+            Object[] options = { "Sim", "Não" };
+            finalizarJogo = JOptionPane.showOptionDialog(null, "Deseja ver a próxima interação?", "Mensagem",
+                    JOptionPane.DEFAULT_OPTION,
+                    JOptionPane.WARNING_MESSAGE,
+                    null, options, options[0]);
+        } while (finalizarJogo != 1);
         this.scanner.close();
     }
 }
