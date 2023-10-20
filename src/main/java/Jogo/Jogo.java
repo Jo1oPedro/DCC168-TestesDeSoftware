@@ -112,6 +112,30 @@ public class Jogo {
         }
     }
 
+    private int respostaJanela()
+    {
+        int resposta = -1;
+        while (resposta != 0 && resposta != 1) {
+            String input = JOptionPane.showInputDialog(null, "Digite 1 para ver a próxima interação e 0 para sair", "Interação", JOptionPane.QUESTION_MESSAGE);
+
+            if (input == null) {
+                // O usuário clicou no botão Fechar ou Cancelar
+                resposta = 0;
+            } else {
+                try {
+                    resposta = Integer.parseInt(input);
+
+                    if (resposta != 0 && resposta != 1) {
+                        JOptionPane.showMessageDialog(null, "Por favor, digite 1 ou 0", "Erro", JOptionPane.ERROR_MESSAGE);
+                    }
+                } catch (NumberFormatException e) {
+                    JOptionPane.showMessageDialog(null, "Por favor, digite 1 ou 0", "Erro", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        }
+        return resposta;
+    }
+
     public int getNumeroLinhasMapa() {
         return numeroLinhasMapa;
     }
@@ -194,12 +218,8 @@ public class Jogo {
                 JOptionPane.showMessageDialog(null, "Todos os peixes morreram", "Informação", JOptionPane.INFORMATION_MESSAGE, null);
                 return;
             }
-            Object[] options = { "Sim", "Não" };
-            finalizarJogo = JOptionPane.showOptionDialog(null, "Deseja ver a próxima interação?", "Mensagem",
-                    JOptionPane.DEFAULT_OPTION,
-                    JOptionPane.WARNING_MESSAGE,
-                    null, options, options[0]);
-        } while (finalizarJogo != 1);
+            finalizarJogo = respostaJanela();
+        } while (finalizarJogo != 0);
         this.scanner.close();
     }
 }
