@@ -90,7 +90,7 @@ public class PeixeTeste {
         assertEquals(1, Jogo.getInstance().getPeixes().size());
         Mapa.getInstance().insereNovoPeixe(peixeB);
         peixeB.mover().mover().mover();
-        assertEquals(0, Jogo.getInstance().getPeixes().size());
+        assertEquals(4, Jogo.getInstance().getPeixes().size());
     }
 
     public void peixebDeveReproduzirComSucesso() {

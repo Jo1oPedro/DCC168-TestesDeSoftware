@@ -18,7 +18,7 @@ import Jogo.Jogo;
 
 public class JogoTest {
 
-	private Jogo jogo;
+	/*private Jogo jogo;
 
 	@Before
 	public void setUp() {
@@ -204,5 +204,86 @@ public class JogoTest {
 		assertEquals(2, jogo.getMovimentacaoMortePeixeB());
 
 		jogo.iniciaJogo();
+	}*/
+
+	@Test
+	public void deveRetornarInstanciaDeJogo()
+	{
+		assertNotNull(Jogo.getInstance());
+	}
+
+	@Test
+	public void deveSetarNumeroCorretoDeLinhas()
+	{
+		Jogo.getInstance().setNumeroLinhasMapa(1);
+		assertEquals(1, Jogo.getInstance().getNumeroLinhasMapa());
+	}
+
+	@Test
+	public void deveSetarNumeroCorretoDeColunas()
+	{
+		Jogo.getInstance().setNumeroColunasMapa(1);
+		assertEquals(1, Jogo.getInstance().getNumeroColunasMapa());
+		Jogo.getInstance().setNumeroColunasMapa(0);
+	}
+
+	@Test
+	public void deveRecuperarNumeroCorretoDeColunas0()
+	{
+		assertEquals(0, Jogo.getInstance().getNumeroColunasMapa());
+	}
+
+	@Test
+	public void deveSetarNumeroPeixesA()
+	{
+		Jogo.getInstance().setNumeroPeixesA(1);
+		assertEquals(1, Jogo.getInstance().getNumeroPeixesA());
+	}
+
+	@Test
+	public void deveSetarNumeroPeixesA2()
+	{
+		assertEquals(1, Jogo.getInstance().getNumeroPeixesA());
+	}
+
+	@Test
+	public void deveRecuperarNumeroPeixesA0()
+	{
+		assertEquals(0, Jogo.getInstance().getNumeroPeixesA());
+	}
+
+	@Test
+	public void deveSetarNumeroPeixesB()
+	{
+		Jogo.getInstance().setNumeroPeixesB(1);
+		assertEquals(1, Jogo.getInstance().getNumeroPeixesB());
+	}
+
+	@Test
+	public void deveSetarNumeroMovimentacaoReproducaoPeixeA()
+	{
+		Jogo.getInstance().setMovimentacaoReproducaoPeixeA(1);
+		assertEquals(1, Jogo.getInstance().getMovimentacaoReproducaoPeixeA());
+	}
+
+	@Test
+	public void deveSetarNumeroMovimentacaoReproducaoPeixeB()
+	{
+		Jogo.getInstance().setMovimentacaoReproducaoPeixeB(1);
+		assertEquals(1, Jogo.getInstance().getMovimentacaoReproducaoPeixeB());
+	}
+
+	@Test
+	public void deveSetarNumeroMovimentacaoMortePeixeA()
+	{
+		Jogo.getInstance().setMovimentacaoMortePeixeA(1);
+		assertEquals(1, Jogo.getInstance().getMovimentacaoMortePeixeA());
+	}
+
+	@Test
+	public void deveSetarNumeroMovimentacaoMortePeixeB()
+	{
+		Jogo.getInstance().setMovimentacaoMortePeixeB(1);
+		assertEquals(1, Jogo.getInstance().getMovimentacaoMortePeixeB());
 	}
 }

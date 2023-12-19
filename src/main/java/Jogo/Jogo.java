@@ -27,7 +27,7 @@ public class Jogo {
 	private Scanner scanner = new Scanner(System.in);
 	private static Jogo jogo = null;
 
-	public Jogo() {
+	private Jogo() {
 	};
 
 	public static Jogo getInstance() {
