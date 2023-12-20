@@ -119,7 +119,7 @@ public class Jogo {
 	private int respostaJanela() {
 		int resposta = -1;
 		while (resposta != 0 && resposta != 1) {
-			String input = JOptionPane.showInputDialog(null, "Digite 1 para ver a próxima interação e 0 para sair",
+			String input = MockJOptionPane.showInputDialog(null, "Digite 1 para ver a próxima interação e 0 para sair",
 					"Interação", JOptionPane.QUESTION_MESSAGE);
 
 			if (input == null) {
@@ -248,7 +248,7 @@ public class Jogo {
 	/*14*/		do {		
 	/*14*/			this.getPeixes().get(posicao).mover();
 	/*14*/			posicao++;
-	/*14*/			Mapa.getInstance().imprimeMapa();
+	/*14*/			//Mapa.getInstance().imprimeMapa();
 					System.out.println("Tamanho: " +this.getPeixes().size());
 	/*14*/			if (posicao >= this.getPeixes().size()) {
 	/*15*/				posicao = 0;

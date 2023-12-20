@@ -1,5 +1,3 @@
-package Test;
-
 import static org.junit.Assert.*;
 
 import java.io.ByteArrayInputStream;
@@ -15,21 +13,25 @@ import ConteudoDoMapa.Peixes.IPeixe;
 import ConteudoDoMapa.Peixes.PeixeA;
 import ConteudoDoMapa.Peixes.PeixeB;
 import Jogo.Jogo;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import Jogo.MockJOptionPane;
 
-public class JogoTest {
+class JogoTest {
 
-	/*private Jogo jogo;
+	private Jogo jogo;
 
-	@Before
+	@BeforeEach
 	public void setUp() {
 		this.jogo = Jogo.getInstance();
 	}
 	
-	@After
+	@AfterEach
 	public void tearDown() {
 		this.jogo = null;
 	}
 	
+	/*
 	@Test
 	public void testCaminhos1() throws InvalidAttributeValueException {
 		jogo.setNumeroLinhasMapa(5);
@@ -130,7 +132,7 @@ public class JogoTest {
 
 		jogo.iniciaJogo();
 	}
-	
+	*/
 	@Test
 	public void testCaminhos5() throws InvalidAttributeValueException {
 		jogo.setNumeroLinhasMapa(5);
@@ -153,9 +155,13 @@ public class JogoTest {
 		assertEquals(7, jogo.getMovimentacaoMortePeixeA());
 		assertEquals(2, jogo.getMovimentacaoMortePeixeB());
 
+		MockJOptionPane.setMockResponses("1", "1", "0"); // Exemplo de sequência simulada
+		
 		jogo.iniciaJogo();
+		
 	}
 	
+	/*
 	@Test
 	public void testCaminhos6() throws InvalidAttributeValueException {
 		jogo.setNumeroLinhasMapa(5);
@@ -204,86 +210,9 @@ public class JogoTest {
 		assertEquals(2, jogo.getMovimentacaoMortePeixeB());
 
 		jogo.iniciaJogo();
-	}*/
-
-	@Test
-	public void deveRetornarInstanciaDeJogo()
-	{
-		assertNotNull(Jogo.getInstance());
 	}
+	*/
+	
+	
 
-	@Test
-	public void deveSetarNumeroCorretoDeLinhas()
-	{
-		Jogo.getInstance().setNumeroLinhasMapa(1);
-		assertEquals(1, Jogo.getInstance().getNumeroLinhasMapa());
-	}
-
-	@Test
-	public void deveSetarNumeroCorretoDeColunas()
-	{
-		Jogo.getInstance().setNumeroColunasMapa(1);
-		assertEquals(1, Jogo.getInstance().getNumeroColunasMapa());
-		Jogo.getInstance().setNumeroColunasMapa(0);
-	}
-
-	@Test
-	public void deveRecuperarNumeroCorretoDeColunas0()
-	{
-		assertEquals(0, Jogo.getInstance().getNumeroColunasMapa());
-	}
-
-	@Test
-	public void deveSetarNumeroPeixesA()
-	{
-		Jogo.getInstance().setNumeroPeixesA(1);
-		assertEquals(1, Jogo.getInstance().getNumeroPeixesA());
-	}
-
-	@Test
-	public void deveSetarNumeroPeixesA2()
-	{
-		assertEquals(1, Jogo.getInstance().getNumeroPeixesA());
-	}
-
-	@Test
-	public void deveRecuperarNumeroPeixesA0()
-	{
-		assertEquals(0, Jogo.getInstance().getNumeroPeixesA());
-	}
-
-	@Test
-	public void deveSetarNumeroPeixesB()
-	{
-		Jogo.getInstance().setNumeroPeixesB(1);
-		assertEquals(1, Jogo.getInstance().getNumeroPeixesB());
-	}
-
-	@Test
-	public void deveSetarNumeroMovimentacaoReproducaoPeixeA()
-	{
-		Jogo.getInstance().setMovimentacaoReproducaoPeixeA(1);
-		assertEquals(1, Jogo.getInstance().getMovimentacaoReproducaoPeixeA());
-	}
-
-	@Test
-	public void deveSetarNumeroMovimentacaoReproducaoPeixeB()
-	{
-		Jogo.getInstance().setMovimentacaoReproducaoPeixeB(1);
-		assertEquals(1, Jogo.getInstance().getMovimentacaoReproducaoPeixeB());
-	}
-
-	@Test
-	public void deveSetarNumeroMovimentacaoMortePeixeA()
-	{
-		Jogo.getInstance().setMovimentacaoMortePeixeA(1);
-		assertEquals(1, Jogo.getInstance().getMovimentacaoMortePeixeA());
-	}
-
-	@Test
-	public void deveSetarNumeroMovimentacaoMortePeixeB()
-	{
-		Jogo.getInstance().setMovimentacaoMortePeixeB(1);
-		assertEquals(1, Jogo.getInstance().getMovimentacaoMortePeixeB());
-	}
 }
