@@ -48,6 +48,10 @@
                 <configuration>
                     <targetClasses>
                         <param>Jogo.Jogo</param>
+                        <param>Mapa.Mapa</param>
+                        <param>ConteudoDoMapa.Peixes.PeixeA</param>
+                        <param>ConteudoDoMapa.Peixes.PeixeB</param>
+                        <param>ConteudoDoMapa.Peixes.Peixe</param>
                     </targetClasses>
                     <targetTests>
                         <param>*</param>

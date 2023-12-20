@@ -1,0 +1,3118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>PeixeB.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package ConteudoDoMapa.Peixes;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import ConteudoDoMapa.Alimentos.IAlimento;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import Jogo.Jogo;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import Mapa.Mapa;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import javax.management.InvalidAttributeValueException;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.ArrayList;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.List;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Random;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>public class PeixeB extends Peixe {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_14'/>
+14
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_14'>2</a>
+<span>
+
+1. &#60;init&#62; : Removed assignment to member variable peixesComidos &rarr; KILLED<br/>
+
+2. &#60;init&#62; : Substituted 0 with 1 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;private int peixesComidos = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;@Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;protected boolean regraMoverAcima() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_18'/>
+18
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_18'>8</a>
+<span>
+
+1. regraMoverAcima : removed call to ConteudoDoMapa/Peixes/PeixeB::getLinhaAtual &rarr; KILLED<br/>
+
+2. regraMoverAcima : removed call to java/lang/Integer::intValue &rarr; KILLED<br/>
+
+3. regraMoverAcima : Substituted 1 with 0 &rarr; KILLED<br/>
+
+4. regraMoverAcima : removed call to Mapa/Mapa::getInstance &rarr; KILLED<br/>
+
+5. regraMoverAcima : removed call to java/lang/Integer::intValue &rarr; KILLED<br/>
+
+6. regraMoverAcima : removed call to Mapa/Mapa::getPosicaoDoMapa &rarr; KILLED<br/>
+
+7. regraMoverAcima : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+8. regraMoverAcima : removed call to ConteudoDoMapa/Peixes/PeixeB::getColunaAtual &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;IPeixe peixe = Mapa.getInstance().getPosicaoDoMapa(this.getLinhaAtual() + 1, this.getColunaAtual());</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_19'/>
+19
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_19'>9</a>
+<span>
+
+1. regraMoverAcima : removed conditional - replaced equality check with true &rarr; NO_COVERAGE<br/>
+
+2. regraMoverAcima : negated conditional &rarr; NO_COVERAGE<br/>
+
+3. regraMoverAcima : removed conditional - replaced equality check with false &rarr; NO_COVERAGE<br/>
+
+4. regraMoverAcima : Substituted 0 with 1 &rarr; NO_COVERAGE<br/>
+
+5. regraMoverAcima : replaced boolean return with true for ConteudoDoMapa/Peixes/PeixeB::regraMoverAcima &rarr; KILLED<br/>
+
+6. regraMoverAcima : Substituted 1 with 0 &rarr; KILLED<br/>
+
+7. regraMoverAcima : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+8. regraMoverAcima : negated conditional &rarr; KILLED<br/>
+
+9. regraMoverAcima : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;return peixe == null || peixe instanceof PeixeA;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;@Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;protected boolean regraMoverAbaixo() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_24'/>
+24
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_24'>8</a>
+<span>
+
+1. regraMoverAbaixo : Substituted 1 with 0 &rarr; KILLED<br/>
+
+2. regraMoverAbaixo : removed call to java/lang/Integer::intValue &rarr; KILLED<br/>
+
+3. regraMoverAbaixo : removed call to ConteudoDoMapa/Peixes/PeixeB::getLinhaAtual &rarr; KILLED<br/>
+
+4. regraMoverAbaixo : removed call to Mapa/Mapa::getInstance &rarr; KILLED<br/>
+
+5. regraMoverAbaixo : removed call to ConteudoDoMapa/Peixes/PeixeB::getColunaAtual &rarr; KILLED<br/>
+
+6. regraMoverAbaixo : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+7. regraMoverAbaixo : removed call to Mapa/Mapa::getPosicaoDoMapa &rarr; KILLED<br/>
+
+8. regraMoverAbaixo : removed call to java/lang/Integer::intValue &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;IPeixe peixe = Mapa.getInstance().getPosicaoDoMapa(this.getLinhaAtual() - 1, this.getColunaAtual());</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_25'/>
+25
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_25'>9</a>
+<span>
+
+1. regraMoverAbaixo : Substituted 1 with 0 &rarr; KILLED<br/>
+
+2. regraMoverAbaixo : replaced boolean return with true for ConteudoDoMapa/Peixes/PeixeB::regraMoverAbaixo &rarr; KILLED<br/>
+
+3. regraMoverAbaixo : Substituted 0 with 1 &rarr; KILLED<br/>
+
+4. regraMoverAbaixo : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+5. regraMoverAbaixo : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+
+6. regraMoverAbaixo : negated conditional &rarr; KILLED<br/>
+
+7. regraMoverAbaixo : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+
+8. regraMoverAbaixo : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+9. regraMoverAbaixo : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return peixe == null || peixe instanceof PeixeA;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;@Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;protected boolean regraMoverEsquerda() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_30'/>
+30
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_30'>8</a>
+<span>
+
+1. regraMoverEsquerda : removed call to ConteudoDoMapa/Peixes/PeixeB::getColunaAtual &rarr; KILLED<br/>
+
+2. regraMoverEsquerda : Substituted 1 with 0 &rarr; KILLED<br/>
+
+3. regraMoverEsquerda : removed call to java/lang/Integer::intValue &rarr; KILLED<br/>
+
+4. regraMoverEsquerda : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+5. regraMoverEsquerda : removed call to Mapa/Mapa::getPosicaoDoMapa &rarr; KILLED<br/>
+
+6. regraMoverEsquerda : removed call to Mapa/Mapa::getInstance &rarr; KILLED<br/>
+
+7. regraMoverEsquerda : removed call to java/lang/Integer::intValue &rarr; KILLED<br/>
+
+8. regraMoverEsquerda : removed call to ConteudoDoMapa/Peixes/PeixeB::getLinhaAtual &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;IPeixe peixe = Mapa.getInstance().getPosicaoDoMapa(this.getLinhaAtual(), this.getColunaAtual() - 1);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_31'/>
+31
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_31'>9</a>
+<span>
+
+1. regraMoverEsquerda : Substituted 1 with 0 &rarr; NO_COVERAGE<br/>
+
+2. regraMoverEsquerda : Substituted 0 with 1 &rarr; KILLED<br/>
+
+3. regraMoverEsquerda : negated conditional &rarr; KILLED<br/>
+
+4. regraMoverEsquerda : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+5. regraMoverEsquerda : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+
+6. regraMoverEsquerda : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+7. regraMoverEsquerda : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+
+8. regraMoverEsquerda : negated conditional &rarr; KILLED<br/>
+
+9. regraMoverEsquerda : replaced boolean return with true for ConteudoDoMapa/Peixes/PeixeB::regraMoverEsquerda &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;return peixe == null || peixe instanceof PeixeA;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;@Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;protected boolean regraMoverDireita() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_36'/>
+36
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_36'>8</a>
+<span>
+
+1. regraMoverDireita : removed call to Mapa/Mapa::getInstance &rarr; KILLED<br/>
+
+2. regraMoverDireita : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+3. regraMoverDireita : removed call to java/lang/Integer::intValue &rarr; KILLED<br/>
+
+4. regraMoverDireita : removed call to ConteudoDoMapa/Peixes/PeixeB::getLinhaAtual &rarr; KILLED<br/>
+
+5. regraMoverDireita : Substituted 1 with 0 &rarr; KILLED<br/>
+
+6. regraMoverDireita : removed call to ConteudoDoMapa/Peixes/PeixeB::getColunaAtual &rarr; KILLED<br/>
+
+7. regraMoverDireita : removed call to java/lang/Integer::intValue &rarr; KILLED<br/>
+
+8. regraMoverDireita : removed call to Mapa/Mapa::getPosicaoDoMapa &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;IPeixe peixe = Mapa.getInstance().getPosicaoDoMapa(this.getLinhaAtual(), this.getColunaAtual() + 1);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_37'/>
+37
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_37'>9</a>
+<span>
+
+1. regraMoverDireita : removed conditional - replaced equality check with false &rarr; NO_COVERAGE<br/>
+
+2. regraMoverDireita : negated conditional &rarr; NO_COVERAGE<br/>
+
+3. regraMoverDireita : Substituted 0 with 1 &rarr; NO_COVERAGE<br/>
+
+4. regraMoverDireita : removed conditional - replaced equality check with true &rarr; NO_COVERAGE<br/>
+
+5. regraMoverDireita : Substituted 1 with 0 &rarr; KILLED<br/>
+
+6. regraMoverDireita : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+
+7. regraMoverDireita : replaced boolean return with true for ConteudoDoMapa/Peixes/PeixeB::regraMoverDireita &rarr; KILLED<br/>
+
+8. regraMoverDireita : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+9. regraMoverDireita : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;return peixe == null || peixe instanceof PeixeA;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;@Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;protected String[] sorteiaPosicaoParaMovimentar() throws InvalidAttributeValueException, PeixeMortoException {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_42'/>
+42
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_42'>1</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : removed call to java/util/Random::&#60;init&#62; &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;Random random = new Random();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_43'/>
+43
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_43'>1</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : removed call to ConteudoDoMapa/Peixes/PeixeB::verificaProximidades &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;List&#60;String&#62; proximidades = this.verificaProximidades();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_44'/>
+44
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_44'>1</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : removed call to java/util/ArrayList::&#60;init&#62; &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;List&#60;String&#62; proximidadesPeixeA = new ArrayList&#60;String&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_45'/>
+45
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_45'>1</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : removed call to java/util/ArrayList::&#60;init&#62; &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;List&#60;String&#62; proximidadesVazias = new ArrayList&#60;String&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_47'/>
+47
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_47'>7</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+
+2. sorteiaPosicaoParaMovimentar : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+3. sorteiaPosicaoParaMovimentar : changed conditional boundary &rarr; KILLED<br/>
+
+4. sorteiaPosicaoParaMovimentar : Substituted 1 with 0 &rarr; KILLED<br/>
+
+5. sorteiaPosicaoParaMovimentar : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+6. sorteiaPosicaoParaMovimentar : negated conditional &rarr; KILLED<br/>
+
+7. sorteiaPosicaoParaMovimentar : removed call to java/util/List::size &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;if (proximidades.size() - 1 &#62; 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;for (String posicao : proximidades) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_49'/>
+49
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_49'>1</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : removed call to java/lang/String::split &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;String[] posicoes = posicao.split(&#34;,&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_50'/>
+50
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_50'>5</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : Substituted 0 with 1 &rarr; KILLED<br/>
+
+2. sorteiaPosicaoParaMovimentar : removed call to java/lang/Integer::parseInt &rarr; KILLED<br/>
+
+3. sorteiaPosicaoParaMovimentar : Substituted 1 with 0 &rarr; KILLED<br/>
+
+4. sorteiaPosicaoParaMovimentar : removed call to Mapa/Mapa::getInstance &rarr; KILLED<br/>
+
+5. sorteiaPosicaoParaMovimentar : removed call to Mapa/Mapa::getPosicaoDoMapa &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;IPeixe posicaoDoMapa = Mapa.getInstance().getPosicaoDoMapa(Integer.parseInt(posicoes[0]),</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_51'/>
+51
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_51'>1</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : removed call to java/lang/Integer::parseInt &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;&#9;&#9;Integer.parseInt(posicoes[1]));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_52'/>
+52
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_52'>3</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : negated conditional &rarr; KILLED<br/>
+
+2. sorteiaPosicaoParaMovimentar : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+3. sorteiaPosicaoParaMovimentar : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;if (posicaoDoMapa == null) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_53'/>
+53
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_53'>1</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : removed call to java/util/List::add &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;&#9;proximidadesVazias.add(posicao);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_54'/>
+54
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_54'>3</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : negated conditional &rarr; KILLED<br/>
+
+2. sorteiaPosicaoParaMovimentar : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+
+3. sorteiaPosicaoParaMovimentar : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;} else if (posicaoDoMapa instanceof PeixeA) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_55'/>
+55
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_55'>1</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : removed call to java/util/List::add &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;&#9;proximidadesPeixeA.add(posicao);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;String[] direcoes;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_61'/>
+61
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_61'>4</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : negated conditional &rarr; KILLED<br/>
+
+2. sorteiaPosicaoParaMovimentar : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+
+3. sorteiaPosicaoParaMovimentar : removed call to java/util/List::isEmpty &rarr; KILLED<br/>
+
+4. sorteiaPosicaoParaMovimentar : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;if (!proximidadesPeixeA.isEmpty()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_62'/>
+62
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_62'>5</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : removed conditional - replaced equality check with true &rarr; SURVIVED<br/>
+
+2. sorteiaPosicaoParaMovimentar : removed call to java/util/List::size &rarr; KILLED<br/>
+
+3. sorteiaPosicaoParaMovimentar : Substituted 1 with 0 &rarr; KILLED<br/>
+
+4. sorteiaPosicaoParaMovimentar : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+
+5. sorteiaPosicaoParaMovimentar : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;&#9;&#9;if (proximidadesPeixeA.size() == 1) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_63'/>
+63
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_63'>4</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : replaced return value with null for ConteudoDoMapa/Peixes/PeixeB::sorteiaPosicaoParaMovimentar &rarr; KILLED<br/>
+
+2. sorteiaPosicaoParaMovimentar : Substituted 0 with 1 &rarr; KILLED<br/>
+
+3. sorteiaPosicaoParaMovimentar : removed call to java/lang/String::split &rarr; KILLED<br/>
+
+4. sorteiaPosicaoParaMovimentar : removed call to java/util/List::get &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;&#9;return proximidadesPeixeA.get(0).split(&#34;,&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_64'/>
+64
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_64'>6</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : removed call to java/util/List::size &rarr; NO_COVERAGE<br/>
+
+2. sorteiaPosicaoParaMovimentar : Substituted 1 with 0 &rarr; NO_COVERAGE<br/>
+
+3. sorteiaPosicaoParaMovimentar : negated conditional &rarr; NO_COVERAGE<br/>
+
+4. sorteiaPosicaoParaMovimentar : removed conditional - replaced comparison check with true &rarr; NO_COVERAGE<br/>
+
+5. sorteiaPosicaoParaMovimentar : removed conditional - replaced comparison check with false &rarr; NO_COVERAGE<br/>
+
+6. sorteiaPosicaoParaMovimentar : changed conditional boundary &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;&#9;} else if (proximidadesPeixeA.size() &#62; 1) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_65'/>
+65
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_65'>5</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : replaced call to java/util/Random::nextInt with argument &rarr; NO_COVERAGE<br/>
+
+2. sorteiaPosicaoParaMovimentar : Substituted 1 with 0 &rarr; NO_COVERAGE<br/>
+
+3. sorteiaPosicaoParaMovimentar : removed call to java/util/Random::nextInt &rarr; NO_COVERAGE<br/>
+
+4. sorteiaPosicaoParaMovimentar : Replaced integer subtraction with addition &rarr; NO_COVERAGE<br/>
+
+5. sorteiaPosicaoParaMovimentar : removed call to java/util/List::size &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;&#9;&#9;int indice = random.nextInt(proximidadesPeixeA.size() - 1);</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_66'/>
+66
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_66'>3</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : removed call to java/lang/String::split &rarr; NO_COVERAGE<br/>
+
+2. sorteiaPosicaoParaMovimentar : removed call to java/util/List::get &rarr; NO_COVERAGE<br/>
+
+3. sorteiaPosicaoParaMovimentar : replaced return value with null for ConteudoDoMapa/Peixes/PeixeB::sorteiaPosicaoParaMovimentar &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;&#9;&#9;return proximidadesPeixeA.get(indice).split(&#34;,&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_67'/>
+67
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_67'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_68'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_69'/>
+69
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_69'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_70'/>
+70
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_70'>4</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+
+2. sorteiaPosicaoParaMovimentar : removed call to java/util/List::isEmpty &rarr; KILLED<br/>
+
+3. sorteiaPosicaoParaMovimentar : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+4. sorteiaPosicaoParaMovimentar : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;if (!proximidadesVazias.isEmpty()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_71'/>
+71
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_71'>5</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : Substituted 1 with 0 &rarr; KILLED<br/>
+
+2. sorteiaPosicaoParaMovimentar : removed call to java/util/List::size &rarr; KILLED<br/>
+
+3. sorteiaPosicaoParaMovimentar : negated conditional &rarr; KILLED<br/>
+
+4. sorteiaPosicaoParaMovimentar : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+
+5. sorteiaPosicaoParaMovimentar : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;if (proximidadesVazias.size() == 1) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_72'/>
+72
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_72'>1</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : removed call to ConteudoDoMapa/Peixes/PeixeB::incrementaMovimentoInvalido &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;&#9;&#9;this.incrementaMovimentoInvalido();</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_73'/>
+73
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_73'>4</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : replaced return value with null for ConteudoDoMapa/Peixes/PeixeB::sorteiaPosicaoParaMovimentar &rarr; NO_COVERAGE<br/>
+
+2. sorteiaPosicaoParaMovimentar : Substituted 0 with 1 &rarr; NO_COVERAGE<br/>
+
+3. sorteiaPosicaoParaMovimentar : removed call to java/util/List::get &rarr; NO_COVERAGE<br/>
+
+4. sorteiaPosicaoParaMovimentar : removed call to java/lang/String::split &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;&#9;&#9;return proximidadesVazias.get(0).split(&#34;,&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_74'/>
+74
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_74'>6</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : negated conditional &rarr; KILLED<br/>
+
+2. sorteiaPosicaoParaMovimentar : removed call to java/util/List::size &rarr; KILLED<br/>
+
+3. sorteiaPosicaoParaMovimentar : Substituted 1 with 0 &rarr; KILLED<br/>
+
+4. sorteiaPosicaoParaMovimentar : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+5. sorteiaPosicaoParaMovimentar : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+
+6. sorteiaPosicaoParaMovimentar : changed conditional boundary &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;} else if (proximidadesVazias.size() &#62; 1) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_75'/>
+75
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_75'>1</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : removed call to ConteudoDoMapa/Peixes/PeixeB::incrementaMovimentoInvalido &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;&#9;this.incrementaMovimentoInvalido();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_76'/>
+76
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_76'>5</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : removed call to java/util/Random::nextInt &rarr; KILLED<br/>
+
+2. sorteiaPosicaoParaMovimentar : Substituted 1 with 0 &rarr; KILLED<br/>
+
+3. sorteiaPosicaoParaMovimentar : removed call to java/util/List::size &rarr; KILLED<br/>
+
+4. sorteiaPosicaoParaMovimentar : replaced call to java/util/Random::nextInt with argument &rarr; KILLED<br/>
+
+5. sorteiaPosicaoParaMovimentar : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;&#9;int indice = random.nextInt(proximidadesVazias.size() - 1);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_77'/>
+77
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_77'>3</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : replaced return value with null for ConteudoDoMapa/Peixes/PeixeB::sorteiaPosicaoParaMovimentar &rarr; KILLED<br/>
+
+2. sorteiaPosicaoParaMovimentar : removed call to java/lang/String::split &rarr; KILLED<br/>
+
+3. sorteiaPosicaoParaMovimentar : removed call to java/util/List::get &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;&#9;return proximidadesVazias.get(indice).split(&#34;,&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_78'/>
+78
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_78'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_79'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_80'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_81'/>
+81
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_81'>4</a>
+<span>
+
+1. sorteiaPosicaoParaMovimentar : Substituted 0 with 1 &rarr; NO_COVERAGE<br/>
+
+2. sorteiaPosicaoParaMovimentar : Substituted 1 with 0 &rarr; NO_COVERAGE<br/>
+
+3. sorteiaPosicaoParaMovimentar : replaced return value with null for ConteudoDoMapa/Peixes/PeixeB::sorteiaPosicaoParaMovimentar &rarr; NO_COVERAGE<br/>
+
+4. sorteiaPosicaoParaMovimentar : Substituted 2 with 3 &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>&#9;&#9;return new String[] { &#34;&#34;, &#34;&#34; };</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_82'/>
+82
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_82'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_83'/>
+83
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_83'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_84'/>
+84
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_84'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;@Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_85'/>
+85
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_85'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public void reproduzir() throws InvalidAttributeValueException {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_86'/>
+86
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_86'>5</a>
+<span>
+
+1. reproduzir : removed call to Jogo/Jogo::getMovimentacaoReproducaoPeixeB &rarr; KILLED<br/>
+
+2. reproduzir : removed call to Jogo/Jogo::getInstance &rarr; KILLED<br/>
+
+3. reproduzir : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+4. reproduzir : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+
+5. reproduzir : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;if (this.peixesComidos == Jogo.getInstance().getMovimentacaoReproducaoPeixeB()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_87'/>
+87
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_87'>3</a>
+<span>
+
+1. reproduzir : replaced call to ConteudoDoMapa/Peixes/Peixe::resetaMovimentoInvalido with receiver &rarr; KILLED<br/>
+
+2. reproduzir : removed call to ConteudoDoMapa/Peixes/Peixe::resetaMovimentoInvalido &rarr; KILLED<br/>
+
+3. reproduzir : removed call to ConteudoDoMapa/Peixes/PeixeB::resetaMovimentoValido &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;this.resetaMovimentoValido().resetaMovimentoInvalido();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_88'/>
+88
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_88'>2</a>
+<span>
+
+1. reproduzir : Removed assignment to member variable peixesComidos &rarr; KILLED<br/>
+
+2. reproduzir : Substituted 0 with 1 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;this.peixesComidos = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_89'/>
+89
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_89'>1</a>
+<span>
+
+1. reproduzir : removed call to java/util/Random::&#60;init&#62; &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;Random random = new Random();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_90'/>
+90
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_90'>1</a>
+<span>
+
+1. reproduzir : removed call to ConteudoDoMapa/Peixes/PeixeB::&#60;init&#62; &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;PeixeB peixeB = new PeixeB();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_91'/>
+91
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_91'>1</a>
+<span>
+
+1. reproduzir : removed call to ConteudoDoMapa/Peixes/PeixeB::verificaProximidades &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;List&#60;String&#62; proximidades = this.verificaProximidades();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_92'/>
+92
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_92'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;int direcao_indice;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_93'/>
+93
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_93'>7</a>
+<span>
+
+1. reproduzir : removed call to java/util/List::size &rarr; KILLED<br/>
+
+2. reproduzir : Substituted 1 with 0 &rarr; KILLED<br/>
+
+3. reproduzir : negated conditional &rarr; KILLED<br/>
+
+4. reproduzir : changed conditional boundary &rarr; KILLED<br/>
+
+5. reproduzir : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+
+6. reproduzir : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+7. reproduzir : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;if (proximidades.size() - 1 &#62;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_94'/>
+94
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_94'>7</a>
+<span>
+
+1. reproduzir : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. reproduzir : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+
+3. reproduzir : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+4. reproduzir : removed call to java/util/List::size &rarr; KILLED<br/>
+
+5. reproduzir : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+6. reproduzir : negated conditional &rarr; KILLED<br/>
+
+7. reproduzir : Substituted 1 with 0 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;&#9;&#9;if (proximidades.size() - 1 &#62;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_95'/>
+95
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_95'>1</a>
+<span>
+
+1. reproduzir : Substituted 0 with 1 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;&#9;direcao_indice = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_96'/>
+96
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_96'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;} else {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_97'/>
+97
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_97'>5</a>
+<span>
+
+1. reproduzir : Replaced integer subtraction with addition &rarr; NO_COVERAGE<br/>
+
+2. reproduzir : replaced call to java/util/Random::nextInt with argument &rarr; NO_COVERAGE<br/>
+
+3. reproduzir : removed call to java/util/Random::nextInt &rarr; NO_COVERAGE<br/>
+
+4. reproduzir : Substituted 1 with 0 &rarr; NO_COVERAGE<br/>
+
+5. reproduzir : removed call to java/util/List::size &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;&#9;&#9;direcao_indice = random.nextInt(proximidades.size() - 1);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_98'/>
+98
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_98'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_99'/>
+99
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_99'>2</a>
+<span>
+
+1. reproduzir : removed call to java/util/List::get &rarr; KILLED<br/>
+
+2. reproduzir : removed call to java/lang/String::split &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;String[] valores = proximidades.get(direcao_indice).split(&#34;,&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_100'/>
+100
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_100'>7</a>
+<span>
+
+1. reproduzir : removed call to ConteudoDoMapa/Peixes/IPeixe::setColunaAtual &rarr; KILLED<br/>
+
+2. reproduzir : removed call to java/lang/Integer::parseInt &rarr; KILLED<br/>
+
+3. reproduzir : Substituted 1 with 0 &rarr; KILLED<br/>
+
+4. reproduzir : removed call to ConteudoDoMapa/Peixes/PeixeB::setLinhaAtual &rarr; KILLED<br/>
+
+5. reproduzir : removed call to java/lang/Integer::parseInt &rarr; KILLED<br/>
+
+6. reproduzir : Substituted 0 with 1 &rarr; KILLED<br/>
+
+7. reproduzir : replaced call to ConteudoDoMapa/Peixes/IPeixe::setColunaAtual with receiver &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;peixeB.setLinhaAtual(Integer.parseInt(valores[0])).setColunaAtual(Integer.parseInt(valores[1]));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_101'/>
+101
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_101'>3</a>
+<span>
+
+1. reproduzir : replaced call to Mapa/Mapa::insereNovoPeixe with receiver &rarr; KILLED<br/>
+
+2. reproduzir : removed call to Mapa/Mapa::getInstance &rarr; KILLED<br/>
+
+3. reproduzir : removed call to Mapa/Mapa::insereNovoPeixe &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;Mapa.getInstance().insereNovoPeixe(peixeB);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_102'/>
+102
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_102'>3</a>
+<span>
+
+1. reproduzir : removed call to Jogo/Jogo::setPeixe &rarr; KILLED<br/>
+
+2. reproduzir : replaced call to Jogo/Jogo::setPeixe with receiver &rarr; KILLED<br/>
+
+3. reproduzir : removed call to Jogo/Jogo::getInstance &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;Jogo.getInstance().setPeixe(peixeB);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_103'/>
+103
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_103'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_104'/>
+104
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_104'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_105'/>
+105
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_105'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_106'/>
+106
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_106'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_107'/>
+107
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_107'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;@Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_108'/>
+108
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_108'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;protected Peixe movimentoInvalido() throws PeixeMortoException, InvalidAttributeValueException {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_109'/>
+109
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_109'>6</a>
+<span>
+
+1. movimentoInvalido : removed call to Jogo/Jogo::getInstance &rarr; KILLED<br/>
+
+2. movimentoInvalido : removed call to Jogo/Jogo::getMovimentacaoMortePeixeB &rarr; KILLED<br/>
+
+3. movimentoInvalido : negated conditional &rarr; KILLED<br/>
+
+4. movimentoInvalido : removed call to ConteudoDoMapa/Peixes/PeixeB::recuperaNumeroMovimentosInvalidos &rarr; KILLED<br/>
+
+5. movimentoInvalido : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+
+6. movimentoInvalido : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;if (this.recuperaNumeroMovimentosInvalidos() == Jogo.getInstance().getMovimentacaoMortePeixeB()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_110'/>
+110
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_110'>1</a>
+<span>
+
+1. movimentoInvalido : removed call to ConteudoDoMapa/Peixes/PeixeB::morre &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;this.morre();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_111'/>
+111
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_111'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_112'/>
+112
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_112'>1</a>
+<span>
+
+1. movimentoInvalido : replaced return value with null for ConteudoDoMapa/Peixes/PeixeB::movimentoInvalido &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return this;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_113'/>
+113
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_113'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_114'/>
+114
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_114'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_115'/>
+115
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_115'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;@Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_116'/>
+116
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_116'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public IPeixe come(IAlimento peixeA) throws InvalidAttributeValueException {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_117'/>
+117
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_117'>3</a>
+<span>
+
+1. come : replaced call to ConteudoDoMapa/Peixes/Peixe::resetaMovimentoValido with receiver &rarr; SURVIVED<br/>
+
+2. come : removed call to ConteudoDoMapa/Peixes/Peixe::resetaMovimentoValido &rarr; SURVIVED<br/>
+
+3. come : removed call to ConteudoDoMapa/Peixes/PeixeB::resetaMovimentoInvalido &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;this.resetaMovimentoInvalido().resetaMovimentoValido();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_118'/>
+118
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_118'>1</a>
+<span>
+
+1. come : removed call to ConteudoDoMapa/Peixes/PeixeB::incrementaPeixesComidos &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;this.incrementaPeixesComidos();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_119'/>
+119
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_119'>1</a>
+<span>
+
+1. come : replaced return value with null for ConteudoDoMapa/Peixes/PeixeB::come &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;return this;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_120'/>
+120
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_120'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_121'/>
+121
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_121'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_122'/>
+122
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_122'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;private void incrementaPeixesComidos() throws InvalidAttributeValueException {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_123'/>
+123
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_123'>3</a>
+<span>
+
+1. incrementaPeixesComidos : Replaced integer addition with subtraction &rarr; SURVIVED<br/>
+
+2. incrementaPeixesComidos : Substituted 1 with 0 &rarr; KILLED<br/>
+
+3. incrementaPeixesComidos : Removed assignment to member variable peixesComidos &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;this.peixesComidos++;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_124'/>
+124
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_124'>1</a>
+<span>
+
+1. incrementaPeixesComidos : removed call to ConteudoDoMapa/Peixes/PeixeB::reproduzir &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;this.reproduzir();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_125'/>
+125
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_125'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@47b4ac83_126'/>
+126
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_126'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_14'>14</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_14'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Removed assignment to member variable peixesComidos &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 0 with 1 &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_18'>18</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_18'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>regraMoverAcima<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::getLinhaAtual &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>regraMoverAcima<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/lang/Integer::intValue &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>regraMoverAcima<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>regraMoverAcima<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Mapa/Mapa::getInstance &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>regraMoverAcima<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/lang/Integer::intValue &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>regraMoverAcima<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Mapa/Mapa::getPosicaoDoMapa &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>regraMoverAcima<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>regraMoverAcima<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::getColunaAtual &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_19'>19</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_19'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>regraMoverAcima<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> replaced boolean return with true for ConteudoDoMapa/Peixes/PeixeB::regraMoverAcima &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>regraMoverAcima<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>regraMoverAcima<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with true &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>regraMoverAcima<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>regraMoverAcima<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>regraMoverAcima<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> <p class='NO_COVERAGE'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>regraMoverAcima<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with false &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>regraMoverAcima<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; NO_COVERAGE</p> <p class='KILLED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>regraMoverAcima<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_24'>24</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_24'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>regraMoverAbaixo<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>regraMoverAbaixo<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/lang/Integer::intValue &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>regraMoverAbaixo<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::getLinhaAtual &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>regraMoverAbaixo<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Mapa/Mapa::getInstance &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>regraMoverAbaixo<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::getColunaAtual &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>regraMoverAbaixo<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>regraMoverAbaixo<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Mapa/Mapa::getPosicaoDoMapa &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>regraMoverAbaixo<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/lang/Integer::intValue &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_25'>25</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_25'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>regraMoverAbaixo<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>regraMoverAbaixo<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> replaced boolean return with true for ConteudoDoMapa/Peixes/PeixeB::regraMoverAbaixo &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>regraMoverAbaixo<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>regraMoverAbaixo<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>regraMoverAbaixo<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>regraMoverAbaixo<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>regraMoverAbaixo<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>regraMoverAbaixo<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>regraMoverAbaixo<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_30'>30</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_30'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>regraMoverEsquerda<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::getColunaAtual &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>regraMoverEsquerda<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>regraMoverEsquerda<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/lang/Integer::intValue &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>regraMoverEsquerda<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>regraMoverEsquerda<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Mapa/Mapa::getPosicaoDoMapa &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>regraMoverEsquerda<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Mapa/Mapa::getInstance &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>regraMoverEsquerda<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/lang/Integer::intValue &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>regraMoverEsquerda<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::getLinhaAtual &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_31'>31</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_31'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>regraMoverEsquerda<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>regraMoverEsquerda<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>regraMoverEsquerda<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>regraMoverEsquerda<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>regraMoverEsquerda<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>regraMoverEsquerda<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>regraMoverEsquerda<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> <p class='NO_COVERAGE'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>regraMoverEsquerda<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; NO_COVERAGE</p> <p class='KILLED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>regraMoverEsquerda<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> replaced boolean return with true for ConteudoDoMapa/Peixes/PeixeB::regraMoverEsquerda &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_36'>36</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_36'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>regraMoverDireita<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Mapa/Mapa::getInstance &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>regraMoverDireita<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>regraMoverDireita<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/lang/Integer::intValue &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>regraMoverDireita<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::getLinhaAtual &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>regraMoverDireita<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>regraMoverDireita<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::getColunaAtual &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>regraMoverDireita<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/lang/Integer::intValue &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>regraMoverDireita<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Mapa/Mapa::getPosicaoDoMapa &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_37'>37</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_37'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>regraMoverDireita<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with false &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>regraMoverDireita<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>regraMoverDireita<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>regraMoverDireita<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>regraMoverDireita<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> replaced boolean return with true for ConteudoDoMapa/Peixes/PeixeB::regraMoverDireita &rarr; KILLED</p> <p class='NO_COVERAGE'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>regraMoverDireita<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; NO_COVERAGE</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>regraMoverDireita<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>regraMoverDireita<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> <p class='NO_COVERAGE'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>regraMoverDireita<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with true &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_42'>42</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_42'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/util/Random::&#60;init&#62; &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_43'>43</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_43'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::verificaProximidades &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_44'>44</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_44'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/util/ArrayList::&#60;init&#62; &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_45'>45</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_45'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/util/ArrayList::&#60;init&#62; &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_47'>47</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_47'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/util/List::size &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_49'>49</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_49'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/lang/String::split &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_50'>50</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_50'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/lang/Integer::parseInt &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Mapa/Mapa::getInstance &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Mapa/Mapa::getPosicaoDoMapa &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_51'>51</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_51'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/lang/Integer::parseInt &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_52'>52</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_52'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_53'>53</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_53'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/util/List::add &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_54'>54</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_54'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_55'>55</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_55'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.deveMovimentoPeixeBComSucesso(PeixeTeste)</span></span> removed call to java/util/List::add &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_61'>61</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_61'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/util/List::isEmpty &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_62'>62</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_62'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with true &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.deveMovimentoPeixeBComSucesso(PeixeTeste)</span></span> removed call to java/util/List::size &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.deveMovimentoPeixeBComSucesso(PeixeTeste)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.deveMovimentoPeixeBComSucesso(PeixeTeste)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.deveMovimentoPeixeBComSucesso(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_63'>63</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_63'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.deveMovimentoPeixeBComSucesso(PeixeTeste)</span></span> replaced return value with null for ConteudoDoMapa/Peixes/PeixeB::sorteiaPosicaoParaMovimentar &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.deveMovimentoPeixeBComSucesso(PeixeTeste)</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.deveMovimentoPeixeBComSucesso(PeixeTeste)</span></span> removed call to java/lang/String::split &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.deveMovimentoPeixeBComSucesso(PeixeTeste)</span></span> removed call to java/util/List::get &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_64'>64</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_64'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> removed call to java/util/List::size &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with true &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_65'>65</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_65'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> replaced call to java/util/Random::nextInt with argument &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> removed call to java/util/Random::nextInt &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> removed call to java/util/List::size &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_66'>66</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_66'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> removed call to java/lang/String::split &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> removed call to java/util/List::get &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> replaced return value with null for ConteudoDoMapa/Peixes/PeixeB::sorteiaPosicaoParaMovimentar &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_70'>70</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_70'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/util/List::isEmpty &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_71'>71</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_71'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/util/List::size &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_72'>72</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_72'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::incrementaMovimentoInvalido &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_73'>73</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_73'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> replaced return value with null for ConteudoDoMapa/Peixes/PeixeB::sorteiaPosicaoParaMovimentar &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> removed call to java/util/List::get &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> removed call to java/lang/String::split &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_74'>74</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_74'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/util/List::size &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> changed conditional boundary &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_75'>75</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_75'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::incrementaMovimentoInvalido &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_76'>76</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_76'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/util/Random::nextInt &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/util/List::size &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> replaced call to java/util/Random::nextInt with argument &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_77'>77</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_77'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> replaced return value with null for ConteudoDoMapa/Peixes/PeixeB::sorteiaPosicaoParaMovimentar &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/lang/String::split &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/util/List::get &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_81'>81</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_81'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> replaced return value with null for ConteudoDoMapa/Peixes/PeixeB::sorteiaPosicaoParaMovimentar &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>sorteiaPosicaoParaMovimentar<br/><b>Killed by : </b>none</span></span> Substituted 2 with 3 &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_86'>86</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_86'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Jogo/Jogo::getMovimentacaoReproducaoPeixeB &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Jogo/Jogo::getInstance &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_87'>87</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_87'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> replaced call to ConteudoDoMapa/Peixes/Peixe::resetaMovimentoInvalido with receiver &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/Peixe::resetaMovimentoInvalido &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::resetaMovimentoValido &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_88'>88</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_88'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Removed assignment to member variable peixesComidos &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 0 with 1 &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_89'>89</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_89'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/util/Random::&#60;init&#62; &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_90'>90</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_90'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::&#60;init&#62; &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_91'>91</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_91'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::verificaProximidades &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_93'>93</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_93'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/util/List::size &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_94'>94</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_94'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/util/List::size &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 1 with 0 &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_95'>95</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_95'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 0 with 1 &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_97'>97</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_97'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>none</span></span> replaced call to java/util/Random::nextInt with argument &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>none</span></span> removed call to java/util/Random::nextInt &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>none</span></span> removed call to java/util/List::size &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_99'>99</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_99'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/util/List::get &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/lang/String::split &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_100'>100</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_100'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/IPeixe::setColunaAtual &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/lang/Integer::parseInt &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::setLinhaAtual &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to java/lang/Integer::parseInt &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> replaced call to ConteudoDoMapa/Peixes/IPeixe::setColunaAtual with receiver &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_101'>101</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_101'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> replaced call to Mapa/Mapa::insereNovoPeixe with receiver &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Mapa/Mapa::getInstance &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Mapa/Mapa::insereNovoPeixe &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_102'>102</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_102'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Jogo/Jogo::setPeixe &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> replaced call to Jogo/Jogo::setPeixe with receiver &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>reproduzir<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Jogo/Jogo::getInstance &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_109'>109</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_109'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>movimentoInvalido<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Jogo/Jogo::getInstance &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>movimentoInvalido<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to Jogo/Jogo::getMovimentacaoMortePeixeB &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>movimentoInvalido<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>movimentoInvalido<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::recuperaNumeroMovimentosInvalidos &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>movimentoInvalido<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>movimentoInvalido<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_110'>110</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_110'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>movimentoInvalido<br/><b>Killed by : </b>none</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::morre &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_112'>112</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_112'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>movimentoInvalido<br/><b>Killed by : </b>PeixeTeste.peixebDeveMorrer(PeixeTeste)</span></span> replaced return value with null for ConteudoDoMapa/Peixes/PeixeB::movimentoInvalido &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_117'>117</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_117'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>come<br/><b>Killed by : </b>PeixeTeste.deveMovimentoPeixeBComSucesso(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::resetaMovimentoInvalido &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>come<br/><b>Killed by : </b>none</span></span> replaced call to ConteudoDoMapa/Peixes/Peixe::resetaMovimentoValido with receiver &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>come<br/><b>Killed by : </b>none</span></span> removed call to ConteudoDoMapa/Peixes/Peixe::resetaMovimentoValido &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_118'>118</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_118'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>come<br/><b>Killed by : </b>PeixeTeste.deveMovimentoPeixeBComSucesso(PeixeTeste)</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::incrementaPeixesComidos &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_119'>119</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_119'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>come<br/><b>Killed by : </b>none</span></span> replaced return value with null for ConteudoDoMapa/Peixes/PeixeB::come &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_123'>123</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_123'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>incrementaPeixesComidos<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>incrementaPeixesComidos<br/><b>Killed by : </b>PeixeTeste.deveMovimentoPeixeBComSucesso(PeixeTeste)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>incrementaPeixesComidos<br/><b>Killed by : </b>PeixeTeste.deveMovimentoPeixeBComSucesso(PeixeTeste)</span></span> Removed assignment to member variable peixesComidos &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@47b4ac83_124'>124</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@47b4ac83_124'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>incrementaPeixesComidos<br/><b>Killed by : </b>none</span></span> removed call to ConteudoDoMapa/Peixes/PeixeB::reproduzir &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>CONSTRUCTOR_CALLS</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>EXPERIMENTAL_ARGUMENT_PROPAGATION</li>
+
+<li class='mutator'>EXPERIMENTAL_BIG_DECIMAL</li>
+
+<li class='mutator'>EXPERIMENTAL_BIG_INTEGER</li>
+
+<li class='mutator'>EXPERIMENTAL_MEMBER_VARIABLE</li>
+
+<li class='mutator'>EXPERIMENTAL_NAKED_RECEIVER</li>
+
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_[0-99]</li>
+
+<li class='mutator'>EXPERIMENTAL_SWITCH</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INLINE_CONSTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NON_VOID_METHOD_CALLS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>REMOVE_CONDITIONALS_EQUAL_ELSE</li>
+
+<li class='mutator'>REMOVE_CONDITIONALS_EQUAL_IF</li>
+
+<li class='mutator'>REMOVE_CONDITIONALS_ORDER_ELSE</li>
+
+<li class='mutator'>REMOVE_CONDITIONALS_ORDER_IF</li>
+
+<li class='mutator'>REMOVE_INCREMENTS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>PeixeTeste.peixebDeveMorrer(PeixeTeste) (0 ms)</li><li>PeixeTeste.deveMovimentoPeixeBComSucesso(PeixeTeste) (7 ms)</li><li>MapaTest.devePermitirInserirQualquerTipoDeElementoDoMapaNaMatrizMapa(MapaTest) (0 ms)</li><li>MapaTest.deveRemoverUmElementoDoMapaComSucesso(MapaTest) (0 ms)</li><li>PeixeTeste.naoDeveMovimentoPeixeComSucesso(PeixeTeste) (0 ms)</li><li>PeixeTeste.deveMovimentoPeixeComSucesso(PeixeTeste) (0 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.15.3
+
+</body>
+</html>
